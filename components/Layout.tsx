@@ -17,7 +17,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="h-fit flex-grow flex flex-col  bg-neutral-900 rounded-3xl py-2 px-4 ">
           {children}
         </div>
-        <div className="hidden md:block w-full max-w-[18rem] bg-neutral-900 rounded-xl p-4">
+        <div className="hidden md:block w-full max-w-[18rem] bg-neutral-900 rounded-3xl p-4">
           <FollowBar />
         </div>
       </div>

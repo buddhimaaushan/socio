@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { ClipLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
 
 import usePost from "@/hooks/usePost";
 
@@ -17,7 +17,7 @@ const PostView = () => {
   if (isLoading || !fetchedPost) {
     return (
       <div className="flex justify-center items-center h-full">
-        <ClipLoader color="lightblue" size={80} />
+        <ScaleLoader color="white" />
       </div>
     );
   }
