@@ -49,11 +49,10 @@ const Modal: React.FC<ModalProps> = ({
     <>
       <div
         className="
+        h-screen
           justify-center 
           items-center 
           flex 
-          overflow-x-hidden 
-          overflow-y-auto 
           fixed 
           inset-0 
           z-50 
@@ -63,14 +62,15 @@ const Modal: React.FC<ModalProps> = ({
           bg-opacity-70
         "
       >
-        <div className="relative w-full lg:w-3/6 my-6 mx-auto lg:max-w-3xl h-full lg:h-auto">
+        <div className="relative w-full md:w-3/6 my-6 mx-auto md:max-w-3xl h-full xl:h-auto">
           {/*content*/}
           <div
             className="
             h-full
-            lg:h-auto
+            overflow-x-hidden 
+          overflow-y-auto 
             border-0 
-            rounded-3xl 
+            xl:rounded-3xl 
             shadow-lg 
             relative 
             flex 
